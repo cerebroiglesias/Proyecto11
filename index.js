@@ -1,4 +1,3 @@
-const fs = require('fs');
 const express = require('express');
 const dotenv = require('dotenv');
 
@@ -12,7 +11,6 @@ app.set('view engine', 'ejs'); // register the template engine
 
 app.get('/datos', (req, res) => {
     res.render('index', req.query);
-
 });
 
 const server = app.listen(PORT, () => {
